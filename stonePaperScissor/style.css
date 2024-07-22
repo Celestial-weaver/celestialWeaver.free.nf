@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif,Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(56, 0, 86);
+    display: flex;
+    justify-content: center;
+}
+
+.score-board{
+    margin: 20px;
+    border: 5px solid white;
+    border-radius: 50px;
+    width: 20%;
+    text-align: center;
+}
+
+.score-board h1{
+    color: white;
+    margin: 20px;
+    font-size: 40px;
+    color: rgb(229, 202, 255);
+    
+}
+
+
+
+.score-board div{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 30px;
+}
+
+.score-board div input{
+    width: 50px;
+    font-size: 30px;
+    padding: 5px;
+    background-color: rgb(198, 119, 255);
+    box-shadow: 0px 0px 30px 1px rgb(74, 0, 114) inset;
+    border: 2px solid rgb(27, 0, 57);
+}
+
+.score-board input[type="text"]:nth-child(3){
+    margin:20px 30px;
+    width: 75%;
+    color: white;
+    background-color: transparent;
+    border: 5px solid white;
+    font-weight: 600;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.score-board input[type="button"]{
+    width: 80%;
+    color: white;
+    margin:5px 20px;
+    font-size: 30px;
+    padding: 5px;
+    background-color: rgb(198, 119, 255);
+    box-shadow: 0px 0px 30px 1px rgb(74, 0, 114) inset;
+    border: 2px solid rgb(27, 0, 57);
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+/* working for player one card */
+
+.P1-div{
+    width: 40%;
+}
+
+
+#P1-result{
+    width: 90%;
+    margin: 20px;
+    aspect-ratio: 1/1;
+    background-color: rgba(98, 8, 163, 0.61);
+    border: 5px solid white;
+    outline: none;
+    border-radius:40px;
+    box-shadow: 0px 0px 1000px 5px white inset;
+    font-size: 150px;
+    color: white;
+    text-align: center;
+}
+
+.P1-div div:nth-child(2){
+    display: flex;
+    justify-content: center ;
+    padding:0px 10px;
+}
+
+
+
+.P1-div div:nth-child(2) input{
+    width: 30%;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    color: white;
+    border: 5px solid white;
+    background-color: rgba(144, 0, 254, 0.37);
+    transition-duration: 400ms;
+}
+
+
+.P1-div div:nth-child(2) input:hover{
+    background-color: white;
+    color: black;
+}
+
+.P1-div div:nth-child(3) input:hover{
+    background-color: white;
+    color: black;
+}
+
+.P1-div div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.P1-div div:nth-child(3) input{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 999;
+    border: 5px solid white;
+    color: white;
+    background-color:rgba(144, 0, 254, 0.37) ;
+    transition-duration: 400ms;
+}
+
+/* working for player two card */
+.P2-div{
+    width: 40%;
+}
+
+#P2-result{
+    width: 90%;
+    margin: 20px;
+    aspect-ratio: 1/1;
+    background-color: rgba(98, 8, 163, 0.61);
+    border: 5px solid white;
+    outline: none;
+    border-radius:40px;
+    box-shadow: 0px 0px 1000px 5px white inset;
+    font-size: 150px;
+    color: white;
+    text-align: center;
+}
+
+.P2-div div:nth-child(2){
+    display: flex;
+    justify-content: center ;
+    padding:0px 10px;
+}
+
+.P2-div div:nth-child(2) input{
+    width: 30%;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    color: white;
+    border: 5px solid white;
+    background-color: rgba(144, 0, 254, 0.37);
+    transition-duration: 400ms;
+}
+
+.P2-div div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.P2-div div:nth-child(2) input:hover{
+    background-color: white;
+    color: black;
+}
+
+.P2-div div:nth-child(3) input:hover{
+    background-color: white;
+    color: black;
+}
+
+.P2-div div:nth-child(3) input{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 999;
+    border: 5px solid white;
+    color: white;
+    background-color:rgba(144, 0, 254, 0.37) ;
+    transition-duration: 400ms;
+}
+
+/* woring for vs  */
+
+.VS{
+    width: 20%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.VS img{
+    margin-top: -100%;
+    width: 100%;
+}

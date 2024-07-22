@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+        <link rel="stylesheet" href="style..css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <center>
+            <div class="main-container">
+                <div class="result-input-div">
+                    <input type="text" id="operator-input" value="=" disabled>
+                    <input type="text" id="result-input">
+                </div>
+                <div class="button-container">
+                    <table>
+                        <tr>
+                            <td>
+                                <button onclick="equal();">=</button>
+                            </td>
+                            <td>
+                                <button onclick="cut();"><</button>
+                            </td>
+                            <td>
+                                <button onclick="percentage();">%</button>
+                            </td>
+                            <td>
+                                <button onclick="divide();">/</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="seven();">7</button>
+                            </td>
+                            <td>
+                                <button onclick="eight();">8</button>
+                            </td>
+                            <td>
+                                <button onclick="nine();">9</button>
+                            </td>
+                            <td>
+                                <button onclick="multiply();">x</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="four();">4</button>
+                            </td>
+                            <td>
+                                <button onclick="five();">5</button>
+                            </td>
+                            <td>
+                                <button onclick="six();">6</button>
+                            </td>
+                            <td>
+                                <button onclick="subtract();">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="one();">1</button>
+                            </td>
+                            <td>
+                                <button onclick="two();">2</button>
+                            </td>
+                            <td>
+                                <button onclick="three();">3</button>
+                            </td>
+                            <td rowspan="2">
+                                <button onclick="add();">+</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button onclick="zero();"  style="width:100%">0</button>
+                            </td>
+                            <td>
+                                <button onclick="decimal();">.</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>

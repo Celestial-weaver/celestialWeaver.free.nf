@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    justify-content: center;
+    display: flex;
+    background-color: black;
+}
+
+
+.main-container{
+    height: 600px;
+    width: 400px;
+    background-color:rgb(126, 143, 139);
+    margin: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 20px white;
+
+}
+
+#result-input{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+#operator-input{
+    background-color: transparent;
+    width: 10%;
+    height: 40px;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.result-input-div{
+    width: 100%;
+    height: fit-content;
+}
+
+.button-container{
+
+}
+
+.button-container table{
+    width: 95%;
+    height: 90%;
+}
+
+.button-container table tr td{
+    padding: 4px;
+}
+
+.button-container table tr td button{
+    background-color: transparent;
+    width: 80px;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 40px;
+    transition: 200ms;
+}
+
+.button-container table tr td button:hover{
+    box-shadow:0px 0px 30px white;
+}
+
+.button-container table tr td button:active{
+    background-color: white;
+}

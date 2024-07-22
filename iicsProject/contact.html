@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>
+            Contact Us
+        </title>
+        <link rel="stylesheet" href="contact.css">
+        <script type="text/javascript">
+            function send(){
+                
+                var a="";
+
+                document.getElementById('name').value += a;
+                document.getElementById('message').value += a;
+                document.getElementById('email').value += a;
+                document.getElementById('contactno').value +=a;
+
+                if(a="")
+                {
+                    alert("Please kindly fill the following information");
+                }
+                else{
+                    alert("thanks for contacting us,  We will contact you soon")
+                }
+            }
+
+            function cancel(){
+                document.getElementById('name').value = "";
+                document.getElementById('message').value = "";
+                document.getElementById('email').value = "";
+                document.getElementById('contactno').value = "";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="footer">
+            <table>
+                <tr>
+                    <td>
+                        <span class="logo">
+                            <img src="logo.jpg" id="logoimg">
+                        </span>
+                    </td>
+                    <td>
+                        <div >
+                            <b>
+                                <i class="company-name">
+                                    Nexus under Neck 
+                                </i>
+                            </b>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="Search">
+                            <input type="text" class="input" placeholder="Search">
+                        </span>
+                    </td>
+                    <td>
+                        <span class="menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="listlink">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html"  class="listlink"> About</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="listlink">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="login.html" class="listlink">Login</a>
+                                </li>                    
+                            </ul>
+                        </span>
+                    </td>
+                </tr>
+            </table>  
+        </div>
+        </div>
+
+
+
+
+        <div class="pagebody"> 
+            <center>
+                <div class="container">
+                    <div class="notification">
+                        <span class="red">
+                            ....
+                        </span>
+                        <span  class="yellow">
+                            ....
+                        </span>
+                        <span class="green">
+                            ....
+                        </span>
+                    </div>
+                    <br><br>
+                    <table class="main">
+                        <tr>
+                            <th class="contact" rowspan="4">
+                                CONTACT <br> <u>US</u> 
+                            </th> 
+        
+                            <td> <input type="text" placeholder="Youe Name" id="name"></td> 
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" placeholder="email" id="email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" placeholder="contact no." id="contactno">
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td  class="message">
+                                
+                                <br><br>
+                                <input type="text" placeholder="message" id="message">
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td>
+                                 
+                                <P class="gh">
+                                    CONTACT INFO : + 34 53 1 2345 234
+                                </P>
+                            </td>
+                            
+                            <td>
+                                <div >
+                                    <br>
+                                    <span class="text">
+                                        <b onclick="cancel();"">
+                                            CANCEL
+                                        </b>
+                                    </span>
+                                    &nbsp &nbsp &nbsp
+                                    <span class="text">
+                                        <b onclick="send();"> 
+                                            SEND
+                                        </b>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                    
+                    </table>
+                    <br><br><br>
+                </div>
+            </center>
+        </div>
+
+        <table cellspacing="0"  class="bottom">
+            <tr>
+                <td>
+                    Email ID  
+                </td>
+                <td>
+                    zenitsu.anshul@gmail.com
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Owner name
+                </td>
+                <td>
+                    Celestial Weaver
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    instagram ID
+                </td>
+                <td>
+                    celestial_weaver
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Contact no.
+                </td>
+                <td>
+                    +911 1714271400
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    address
+                </td>
+                <td>
+                    shetal gali khatra mehal andher nagar shamshan ke samne 
+                </td>
+            </tr>
+        </table>
+
+        <br>
+    </body>
+</html>

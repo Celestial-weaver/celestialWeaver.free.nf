@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+        <link rel="stylesheet" href="login.css">
+        <script type="text/javascript">
+            function clearemail(){
+                document.getElementById('email').value = "" ;
+            }
+
+            function clearpassword(){
+                document.getElementById('password').value = "";
+            }
+        </script>
+    </head>
+    <body bgcolor="black">
+        <div class="footer">
+            <table>
+                <tr>
+                    <td>
+                        <span class="logo">
+                            <img src="logo.jpg" id="logoimg">
+                        </span>
+                    </td>
+                    <td>
+                        <div >
+                            <b>
+                                <i class="company-name">
+                                    Nexus under Neck 
+                                </i>
+                            </b>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="Search">
+                            <input type="text" class="input" placeholder="Search">
+                        </span>
+                    </td>
+                    <td>
+                        <span class="menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="listlink">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html"  class="listlink"> About</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="listlink">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="login.html" class="listlink">Login</a>
+                                </li>                    
+                            </ul>
+                        </span>
+                    </td>
+                </tr>
+            </table>  
+        </div>
+        </div>
+
+
+
+
+        <center> 
+            <div class="pagebody">
+                <div>
+                    <form>
+                    <input type="email" placeholder="email" required class="inputdata" onfocus="clearemail();" id="email">
+                    <br><br><br>
+                    <input type="password" class="inputdata" placeholder="password" onfocus="clearpassword();" id="password" required>
+                    <br><br>   <br>
+                    <input type="radio" name="a" class="inputradio"> <span class="dob"  required><b>Male</b></span>    
+                    <input type="radio" name="a" class="inputradio"><span class="dob"  required><b>Female</b></span>
+                    <input type="radio" name="a" class="inputradio"><span class="dob"  required><b>Other</b></span> 
+
+                    <br><br><br>
+
+                    <span class="dob"> <b>date of birth</b></span>
+                    <br><br><br>
+                    <input type="date" class="inputdate" required>
+                    <br><br><br>
+                    <input type="submit" class="inputdata">
+                    <br><br><br>
+                    <input type="reset" class="inputdata">
+                    </form>
+                </div>
+            </div>
+        </center>
+
+        <br><br><br><br><br><br>
+        <table cellspacing="0"  class="bottom">
+            <tr>
+                <td>
+                    Email ID  
+                </td>
+                <td>
+                    zenitsu.anshul@gmail.com
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Owner name
+                </td>
+                <td>
+                    Celestial Weaver
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    instagram ID
+                </td>
+                <td>
+                    celestial_weaver
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Contact no.
+                </td>
+                <td>
+                    +911 1714271400
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    address
+                </td>
+                <td>
+                    shetal gali khatra mehal andher nagar shamshan ke samne 
+                </td>
+            </tr>
+        </table>
+        <br>
+    </body>
+</html>

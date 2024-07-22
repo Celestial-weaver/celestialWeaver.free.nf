@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            Tic Tac Toe
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="collection();">
+        <div class="huge">
+            <!-- working for first div -->
+            <div class="first-div">
+                <hr>
+                <h2 align="center">Welcome to the</h2>
+                <h1 align="center">Tic Tac Toe</h1>
+                <hr>
+                <h4>Rules :-</h4>
+                <ul>
+                    <li>1.  play one by one player 1 (X) will play first</li><br>
+                    <li>2.  mark your symbol in straight line(vertical,horizontal,diognal)</li>
+                </ul><br><hr>
+                <div><h2>Created by.  ANSHUL</h2></div>
+            </div>
+
+            <!-- working for main div -->
+            <div class="main-div">
+                <table cellspacing="0" > 
+                    <tr>
+                        <td onclick="mark(this);" id="check1">&nbsp</td>
+                        <td onclick="mark(this);" id="check2">&nbsp</td>
+                        <td onclick="mark(this);" id="check3">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td onclick="mark(this);" id="check4">&nbsp</td>
+                        <td onclick="mark(this);" id="check5">&nbsp</td>
+                        <td onclick="mark(this);" id="check6">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td onclick="mark(this);" id="check7">&nbsp</td>
+                        <td onclick="mark(this);" id="check8">&nbsp</td>
+                        <td onclick="mark(this);" id="check9">&nbsp</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- working for second div -->
+            <div class="second-div">
+                <input type="button" value="START" onclick="start();" id="start-button">
+                <input type="button" value="RESTART" onclick="restart();">
+                <div>
+                    <div>
+                        <H1 id="P1">P1</H1>
+                        <h2>Total scores</h2>
+                        <h1 id="P2">P2</h1>
+                    </div>
+                    <div>
+                        <input type="button" value="0" disabled id="score-P1">
+                        <input type="button" value="0" disabled id="score-P2">
+                    </div>
+                    <input type="button" id="result-input" value="result-box">
+                    <input type="button" id="game-status" value="Game :- OFF" disabled>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

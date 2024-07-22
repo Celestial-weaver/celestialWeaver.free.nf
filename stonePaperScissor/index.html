@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="score-board">
+            <h1>WELCOME</h1>
+            <div>
+                <span>
+                    <h1>P1</h1>
+                    <input type="text" id="P1-score">
+                </span>
+                <span>
+                    <h1>P2</h1>
+                    <input type="text" id="P2-score">
+                </span>
+            </div>
+            <input type="text">
+            <input type="button" value="EVALUATE">
+            <input type="button" value="RESTART">
+        </div>
+        <div class="game">
+            <div class="P1-div">
+                <input type="text" disabled id="P1-result" value="P1">
+                <div>
+                    <input type="button" value="Stone" id="stone">
+                    <input type="button" value="scissors" id="scissors">
+                    <input type="button" value="paper" id="paper">
+                </div>
+                <div>
+                    <input type="button" id="active" value="HIDE" onclick="check(document.getElementById('P1-result'));">
+                </div>
+            </div>
+
+            <div class="VS">
+                <span><img src="vs.png"></span>
+            </div>
+
+            <div class="P2-div">
+                <input type="text" disabled id="P2-result" value="P2">
+                <div>
+                    <input type="button" value="Stone" id="stone">
+                    <input type="button" value="scissors" id="scissors">
+                    <input type="button" value="paper" id="paper">
+                </div>
+                <div>
+                    <input type="button" id="active" value="HIDE" onclick="check(document.getElementById('P2-result'));">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
